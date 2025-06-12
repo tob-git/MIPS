@@ -1,0 +1,222 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\MYREGISTER.vhd" into library work
+Parsing entity <MYREGISTER>.
+Parsing architecture <Behavioral> of entity <myregister>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\MYPACK.vhd" into library work
+Parsing package <MYPACK>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\DECODER.vhd" into library work
+Parsing entity <DECODER>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\signextened.vhd" into library work
+Parsing entity <signextened>.
+Parsing architecture <Behavioral> of entity <signextened>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\shiftleft2.vhd" into library work
+Parsing entity <shiftleft2>.
+Parsing architecture <Behavioral> of entity <shiftleft2>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\REGISTERFILE.vhd" into library work
+Parsing entity <REGISTERFILE>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\Mux2.vhd" into library work
+Parsing entity <mux2>.
+Parsing architecture <MuxArch> of entity <mux2>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\maincontrol.vhd" into library work
+Parsing entity <maincontrol>.
+Parsing architecture <Behavioral> of entity <maincontrol>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\datapathpack.vhd" into library work
+Parsing package <datapathpack>.
+Parsing package body <datapathpack>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\controlpack.vhd" into library work
+Parsing package <controlpack>.
+Parsing package body <controlpack>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\alucontrol.vhd" into library work
+Parsing entity <alucontrol>.
+Parsing architecture <Behavioral> of entity <alucontrol>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\adder.vhd" into library work
+Parsing entity <adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\mipspack.vhd" into library work
+Parsing package <mipspack>.
+Parsing package body <mipspack>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\datapath.vhd" into library work
+Parsing entity <datapath>.
+Parsing architecture <Behavioral> of entity <datapath>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\controller.vhd" into library work
+Parsing entity <controller>.
+Parsing architecture <struct> of entity <controller>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\mips.vhd" into library work
+Parsing entity <mips>.
+Parsing architecture <Behavioral> of entity <mips>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\mainpack.vhd" into library work
+Parsing package <mainpack>.
+Parsing package body <mainpack>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\imem.vhd" into library work
+Parsing entity <imem>.
+Parsing architecture <behave> of entity <imem>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\dmem.vhd" into library work
+Parsing entity <dmem>.
+Parsing architecture <behave> of entity <dmem>.
+Parsing VHDL file "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\main.vhd" into library work
+Parsing entity <main>.
+Parsing architecture <Behavioral> of entity <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <imem> (architecture <behave>) from library <work>.
+ERROR:HDLCompiler:1030 - "C:\Users\Malak\Downloads\PHASE2 (1)\PHASE2\imem.vhd" Line 30: Cannot open file 'E:/memfile.dat'.
+Netlist imem(behave) remains a blackbox, due to errors in its contents
+
+Elaborating entity <mips> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <controller> (architecture <struct>) from library <work>.
+
+Elaborating entity <maincontrol> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <alucontrol> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <datapath> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MYREGISTER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shiftleft2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux2> (architecture <MuxArch>) with generics from library <work>.
+
+Elaborating entity <REGISTERFILE> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DECODER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <mux2> (architecture <MuxArch>) with generics from library <work>.
+
+Elaborating entity <signextened> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <dmem> (architecture <behave>) from library <work>.
+--> 
+
+Total memory usage is 4514376 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

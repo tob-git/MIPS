@@ -1,0 +1,495 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: REGISTERFILE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "REGISTERFILE.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "REGISTERFILE"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : REGISTERFILE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\ise_xline_labs\PHASE2\PHASE2\MYREGISTER.vhd" into library work
+Parsing entity <MYREGISTER>.
+Parsing architecture <Behavioral> of entity <myregister>.
+Parsing VHDL file "E:\ise_xline_labs\PHASE2\PHASE2\MYPACK.vhd" into library work
+Parsing package <MYPACK>.
+Parsing VHDL file "E:\ise_xline_labs\PHASE2\PHASE2\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "E:\ise_xline_labs\PHASE2\PHASE2\DECODER.vhd" into library work
+Parsing entity <DECODER>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "E:\ise_xline_labs\PHASE2\PHASE2\REGISTERFILE.vhd" into library work
+Parsing entity <REGISTERFILE>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <REGISTERFILE> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DECODER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MYREGISTER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <REGISTERFILE>.
+    Related source file is "E:\ise_xline_labs\PHASE2\PHASE2\REGISTERFILE.vhd".
+    Summary:
+	no macro.
+Unit <REGISTERFILE> synthesized.
+
+Synthesizing Unit <DECODER>.
+    Related source file is "E:\ise_xline_labs\PHASE2\PHASE2\DECODER.vhd".
+    Found 1-bit tristate buffer for signal <Output<31>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<30>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<29>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<28>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<27>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<26>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<25>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<24>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<23>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<22>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<21>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<20>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<19>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<18>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<17>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<16>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<15>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<14>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<13>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<12>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<11>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<10>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<9>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<8>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<7>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<6>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<5>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<4>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<3>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<2>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<1>> created at line 44
+    Found 1-bit tristate buffer for signal <Output<0>> created at line 44
+    Summary:
+	inferred  74 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <DECODER> synthesized.
+
+Synthesizing Unit <MYREGISTER>.
+    Related source file is "E:\ise_xline_labs\PHASE2\PHASE2\MYREGISTER.vhd".
+    Found 32-bit register for signal <O>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <MYREGISTER> synthesized.
+
+Synthesizing Unit <MUX>.
+    Related source file is "E:\ise_xline_labs\PHASE2\PHASE2\MUX.vhd".
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[31]_MUX_1120_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[30]_MUX_1152_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[29]_MUX_1184_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[28]_MUX_1216_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[27]_MUX_1248_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[26]_MUX_1280_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[25]_MUX_1312_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[24]_MUX_1344_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[23]_MUX_1376_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[22]_MUX_1408_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[21]_MUX_1440_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[20]_MUX_1472_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[19]_MUX_1504_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[18]_MUX_1536_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[17]_MUX_1568_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[16]_MUX_1600_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[15]_MUX_1632_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[14]_MUX_1664_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[13]_MUX_1696_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[12]_MUX_1728_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[11]_MUX_1760_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[10]_MUX_1792_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[9]_MUX_1824_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[8]_MUX_1856_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[7]_MUX_1888_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[6]_MUX_1920_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[5]_MUX_1952_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[4]_MUX_1984_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[3]_MUX_2016_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[2]_MUX_2048_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[1]_MUX_2080_o> created at line 43.
+    Found 1-bit 32-to-1 multiplexer for signal <Z_7_o_I0[0]_MUX_2112_o> created at line 43.
+    Found 1-bit tristate buffer for signal <O<31>> created at line 43
+    Found 1-bit tristate buffer for signal <O<30>> created at line 43
+    Found 1-bit tristate buffer for signal <O<29>> created at line 43
+    Found 1-bit tristate buffer for signal <O<28>> created at line 43
+    Found 1-bit tristate buffer for signal <O<27>> created at line 43
+    Found 1-bit tristate buffer for signal <O<26>> created at line 43
+    Found 1-bit tristate buffer for signal <O<25>> created at line 43
+    Found 1-bit tristate buffer for signal <O<24>> created at line 43
+    Found 1-bit tristate buffer for signal <O<23>> created at line 43
+    Found 1-bit tristate buffer for signal <O<22>> created at line 43
+    Found 1-bit tristate buffer for signal <O<21>> created at line 43
+    Found 1-bit tristate buffer for signal <O<20>> created at line 43
+    Found 1-bit tristate buffer for signal <O<19>> created at line 43
+    Found 1-bit tristate buffer for signal <O<18>> created at line 43
+    Found 1-bit tristate buffer for signal <O<17>> created at line 43
+    Found 1-bit tristate buffer for signal <O<16>> created at line 43
+    Found 1-bit tristate buffer for signal <O<15>> created at line 43
+    Found 1-bit tristate buffer for signal <O<14>> created at line 43
+    Found 1-bit tristate buffer for signal <O<13>> created at line 43
+    Found 1-bit tristate buffer for signal <O<12>> created at line 43
+    Found 1-bit tristate buffer for signal <O<11>> created at line 43
+    Found 1-bit tristate buffer for signal <O<10>> created at line 43
+    Found 1-bit tristate buffer for signal <O<9>> created at line 43
+    Found 1-bit tristate buffer for signal <O<8>> created at line 43
+    Found 1-bit tristate buffer for signal <O<7>> created at line 43
+    Found 1-bit tristate buffer for signal <O<6>> created at line 43
+    Found 1-bit tristate buffer for signal <O<5>> created at line 43
+    Found 1-bit tristate buffer for signal <O<4>> created at line 43
+    Found 1-bit tristate buffer for signal <O<3>> created at line 43
+    Found 1-bit tristate buffer for signal <O<2>> created at line 43
+    Found 1-bit tristate buffer for signal <O<1>> created at line 43
+    Found 1-bit tristate buffer for signal <O<0>> created at line 43
+    Summary:
+	inferred  32 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <MUX> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 31
+ 32-bit register                                       : 31
+# Multiplexers                                         : 138
+ 1-bit 2-to-1 multiplexer                              : 74
+ 1-bit 32-to-1 multiplexer                             : 64
+# Tristates                                            : 96
+ 1-bit tristate buffer                                 : 96
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 992
+ Flip-Flops                                            : 992
+# Multiplexers                                         : 138
+ 1-bit 2-to-1 multiplexer                              : 74
+ 1-bit 32-to-1 multiplexer                             : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit DECODER: 32 internal tristates are replaced by logic (pull-up yes): Output<0>, Output<10>, Output<11>, Output<12>, Output<13>, Output<14>, Output<15>, Output<16>, Output<17>, Output<18>, Output<19>, Output<1>, Output<20>, Output<21>, Output<22>, Output<23>, Output<24>, Output<25>, Output<26>, Output<27>, Output<28>, Output<29>, Output<2>, Output<30>, Output<31>, Output<3>, Output<4>, Output<5>, Output<6>, Output<7>, Output<8>, Output<9>.
+
+Optimizing unit <REGISTERFILE> ...
+
+Optimizing unit <DECODER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block REGISTERFILE, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 992
+ Flip-Flops                                            : 992
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : REGISTERFILE.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 735
+#      LUT5                        : 64
+#      LUT6                        : 607
+#      MUXF7                       : 64
+# FlipFlops/Latches                : 992
+#      FDE                         : 992
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 112
+#      IBUF                        : 48
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             992  out of  126800     0%  
+ Number of Slice LUTs:                  671  out of  63400     1%  
+    Number used as Logic:               671  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1119
+   Number with an unused Flip Flop:     127  out of   1119    11%  
+   Number with an unused LUT:           448  out of   1119    40%  
+   Number of fully used LUT-FF pairs:   544  out of   1119    48%  
+   Number of unique control sets:        31
+
+IO Utilization: 
+ Number of IOs:                         113
+ Number of bonded IOBs:                 113  out of    210    53%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 992   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.379ns
+   Maximum output required time after clock: 2.230ns
+   Maximum combinational path delay: 2.144ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6944 / 1984
+-------------------------------------------------------------------------
+Offset:              1.379ns (Levels of Logic = 2)
+  Source:            write_sel<0> (PAD)
+  Destination:       reg32/O_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: write_sel<0> to reg32/O_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   0.001   0.800  write_sel_0_IBUF (write_sel_0_IBUF)
+     LUT6:I0->O           32   0.097   0.386  decoderl/Mmux_Z_5_o_GND_5_o_MUX_626_o11 (L<14>)
+     FDE:CE                    0.095          reg15/O_31
+    ----------------------------------------
+    Total                      1.379ns (0.193ns logic, 1.186ns route)
+                                       (14.0% logic, 86.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1984 / 64
+-------------------------------------------------------------------------
+Offset:              2.230ns (Levels of Logic = 4)
+  Source:            reg27/O_31 (FF)
+  Destination:       data1<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reg27/O_31 to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.561  reg27/O_31 (reg27/O_31)
+     LUT6:I2->O            1   0.097   0.556  MUX2/Mmux_Z_7_o_I0[31]_MUX_1120_o_81 (MUX2/Mmux_Z_7_o_I0[31]_MUX_1120_o_81)
+     LUT6:I2->O            1   0.097   0.000  MUX2/Mmux_Z_7_o_I0[31]_MUX_1120_o_3 (MUX2/Mmux_Z_7_o_I0[31]_MUX_1120_o_3)
+     MUXF7:I1->O           1   0.279   0.279  MUX2/Mmux_Z_7_o_I0[31]_MUX_1120_o_2_f7 (data2_31_OBUF)
+     OBUF:I->O                 0.000          data2_31_OBUF (data2<31>)
+    ----------------------------------------
+    Total                      2.230ns (0.834ns logic, 1.396ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1344 / 64
+-------------------------------------------------------------------------
+Delay:               2.144ns (Levels of Logic = 5)
+  Source:            read_sel1<1> (PAD)
+  Destination:       data1<31> (PAD)
+
+  Data Path: read_sel1<1> to data1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   0.001   0.834  read_sel1_1_IBUF (read_sel1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.556  MUX1/Mmux_Z_7_o_I0[0]_MUX_2112_o_81 (MUX1/Mmux_Z_7_o_I0[0]_MUX_2112_o_81)
+     LUT6:I2->O            1   0.097   0.000  MUX1/Mmux_Z_7_o_I0[0]_MUX_2112_o_3 (MUX1/Mmux_Z_7_o_I0[0]_MUX_2112_o_3)
+     MUXF7:I1->O           1   0.279   0.279  MUX1/Mmux_Z_7_o_I0[0]_MUX_2112_o_2_f7 (data1_0_OBUF)
+     OBUF:I->O                 0.000          data1_0_OBUF (data1<0>)
+    ----------------------------------------
+    Total                      2.144ns (0.474ns logic, 1.670ns route)
+                                       (22.1% logic, 77.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.02 secs
+ 
+--> 
+
+Total memory usage is 4664860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

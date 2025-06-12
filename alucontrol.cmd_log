@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Malak/Downloads/PHASE2 (1)/PHASE2/alucontrol.xst" -ofn "C:/Users/Malak/Downloads/PHASE2 (1)/PHASE2/alucontrol.syr" 

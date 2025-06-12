@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity DECODER is
+Port ( 	Input : in  STD_LOGIC_VECTOR (4 downto 0);
+			enable : in std_logic;
+			Output : out STD_LOGIC_VECTOR (31 downto 0)
+		 );
+end DECODER;
+
+architecture Behavioral of DECODER is
+
+begin
+	  
+	  -- Set only the selected output to '1'
+	   Output <= (OTHERS => '0') when enable = '0' else
+         "00000000000000000000000000000001" when Input = "00000" else
+         "00000000000000000000000000000010" when Input = "00001" else
+         "00000000000000000000000000000100" when Input = "00010" else
+         "00000000000000000000000000001000" when Input = "00011" else
+         "00000000000000000000000000010000" when Input = "00100" else
+         "00000000000000000000000000100000" when Input = "00101" else
+         "00000000000000000000000001000000" when Input = "00110" else
+         "00000000000000000000000010000000" when Input = "00111" else
+         "00000000000000000000000100000000" when Input = "01000" else
+         "00000000000000000000001000000000" when Input = "01001" else
+         "00000000000000000000010000000000" when Input = "01010" else
+         "00000000000000000000100000000000" when Input = "01011" else
+         "00000000000000000001000000000000" when Input = "01100" else
+         "00000000000000000010000000000000" when Input = "01101" else
+         "00000000000000000100000000000000" when Input = "01110" else
+         "00000000000000001000000000000000" when Input = "01111" else
+         "00000000000000010000000000000000" when Input = "10000" else
+         "00000000000000100000000000000000" when Input = "10001" else
+         "00000000000001000000000000000000" when Input = "10010" else
+         "00000000000010000000000000000000" when Input = "10011" else
+         "00000000000100000000000000000000" when Input = "10100" else
+         "00000000001000000000000000000000" when Input = "10101" else
+         "00000000010000000000000000000000" when Input = "10110" else
+         "00000000100000000000000000000000" when Input = "10111" else
+         "00000001000000000000000000000000" when Input = "11000" else
+         "00000010000000000000000000000000" when Input = "11001" else
+         "00000100000000000000000000000000" when Input = "11010" else
+         "00001000000000000000000000000000" when Input = "11011" else
+         "00010000000000000000000000000000" when Input = "11100" else
+         "00100000000000000000000000000000" when Input = "11101" else
+         "01000000000000000000000000000000" when Input = "11110" else
+         "10000000000000000000000000000000" when Input = "11111" else
+         (OTHERS => 'Z');
+
+end Behavioral;
+

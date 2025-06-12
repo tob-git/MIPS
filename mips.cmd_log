@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/ise_xline_labs/PHASE1FINAL/mips.xst" -ofn "E:/ise_xline_labs/PHASE1FINAL/mips.syr" 

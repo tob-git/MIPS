@@ -1,0 +1,4 @@
+vhdl work "maincontrol.vhd"
+vhdl work "controlpack.vhd"
+vhdl work "alucontrol.vhd"
+vhdl work "controller.vhd"

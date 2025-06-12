@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Malak/Downloads/PHASE2 (1)/PHASE2/maintest_isim_beh.exe" -prj "C:/Users/Malak/Downloads/PHASE2 (1)/PHASE2/maintest_beh.prj" "work.maintest" 

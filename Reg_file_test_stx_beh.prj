@@ -1,0 +1,6 @@
+vhdl isim_temp "MYREGISTER.vhd"
+vhdl isim_temp "MYPACK.vhd"
+vhdl isim_temp "MUX.vhd"
+vhdl isim_temp "DECODER.vhd"
+vhdl isim_temp "REGISTERFILE.vhd"
+vhdl isim_temp "REGFILETEST.vhd"

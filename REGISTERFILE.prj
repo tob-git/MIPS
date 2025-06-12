@@ -1,0 +1,5 @@
+vhdl work "MYREGISTER.vhd"
+vhdl work "MYPACK.vhd"
+vhdl work "MUX.vhd"
+vhdl work "DECODER.vhd"
+vhdl work "REGISTERFILE.vhd"
